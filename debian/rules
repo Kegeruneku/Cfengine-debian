@@ -9,7 +9,9 @@ override_dh_auto_configure:
 	./configure --enable-shared=no \
 				--without-nova \
 				--without-constellation \
+				--enable-fhs \
 				--prefix=/usr \
+				--with-tokyocabinet \
 				--with-sql=no \
 				--with-workdir=/var/lib/cfengine3 \
 				--mandir=\$${prefix}/share/man \
